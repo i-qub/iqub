@@ -68,6 +68,9 @@ font-family:sans-serif;
         width:300px;
         border-radius:20px;
     }
+    & .down-button button:hover{
+        background:linear-gradient(292.95deg,#9a4afc -17.22%,#ad3b96 -16.76%,#600271 -12.25%,#b73360 10.42%,#ef8555 107.4%);
+    }
     & .down-button button svg{
         margin-right:100%;
         margin-bottom:3px;
