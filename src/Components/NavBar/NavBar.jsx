@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 const Nav=styled.div`
 width:77vw;
 height:12vh;
@@ -17,6 +18,7 @@ font-family:sans-serif;
     position:relative;
     font-size:1.4rem;
     font-weight:bolder;
+    color:black;
 }
 & .nav-links span::after{
     content: "";
@@ -56,13 +58,14 @@ font-family:sans-serif;
 }
 `
 export default function NavBar() {
+  const [route,setRoute]=useState("");
   return (
     <Nav>
       <span className="logo">Logo</span>
       <div className="nav-links">
-          <span className='pointer active'>Home</span>
-          <span className='pointer'>About</span>
-          <span className='pointer'>Carrer</span>
+      <Link to="/" style={{textDecoration:"none"}} onClick={()=>setRoute("")}><span className={'pointer'+(route===""?' active':null)}>Home</span></Link>
+      <Link to="/about" style={{textDecoration:"none"}}  onClick={()=>setRoute("about")}><span className={'pointer'+(route==="about"?' active':'')}>About</span></Link>
+      <Link to="/career" style={{textDecoration:"none"}} onClick={()=>setRoute("career")}><span className={'pointer'+(route==="career"?' active':'')}>Carrer</span></Link>
       </div>
       <button className='pointer'>Book a Demo</button>
     </Nav>

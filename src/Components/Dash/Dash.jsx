@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 const DashDiv=styled.div`
 width:100vw;
-height:100vh;
+height:auto;
 display:flex;
 background-color:rgba(0,0,0,0.9);
 & .left{
@@ -15,7 +15,7 @@ background-color:rgba(0,0,0,0.9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size:3.5rem;
-        font-weight:545;
+        font-weight:500;
     }
     &>p{
         width:90%;
@@ -42,7 +42,7 @@ background-color:rgba(0,0,0,0.9);
         }
         & .info-title.active{
             color:white;
-            font-weight:550;
+            font-weight:560;
         }
         & .hidden-msg{
             padding-top: 1.5rem;

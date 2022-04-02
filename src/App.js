@@ -5,16 +5,40 @@ import Integrations from './Components/Integrations/Integrations';
 import Interactivity from './Components/Interactivity/Interactivity';
 import News from './Components/News/News';
 import Faq from './Components/Faq/Faq';
-function App() {
-  return (
-    <>
-     <NavBar/>
+import { Route,Routes } from 'react-router-dom';
+import Typical from './Components/Typical/Typical';
+import Roles from './Components/Roles/Roles';
+import Info from './Components/Info/Info';
+import Solve from './Components/Solve/Solve';
+const Home=()=>{return (<>
      <Dash/> 
-     <Footer/>
      <Integrations/>
      <Interactivity/>
      <News/>
      <Faq/>
+</>)}
+const About=()=>{
+  return (<>
+  <Info/>
+  <Solve/>
+  </>)
+}
+const Career=()=>{
+  return (<>
+  <Typical/>
+  <Roles/>
+  </>)
+}
+function App() {
+  return (
+    <>
+     <NavBar/>
+     <Routes>
+     <Route path="/" exact element={<Home/>} />
+     <Route path="/about" exact element={<About/>} />
+     <Route path="/career" exact element={<Career/>} />
+     </Routes>
+     <Footer/>
     </>
   );
 }
