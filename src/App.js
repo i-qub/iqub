@@ -5,7 +5,7 @@ import Integrations from './Components/Integrations/Integrations';
 import Interactivity from './Components/Interactivity/Interactivity';
 import News from './Components/News/News';
 import Faq from './Components/Faq/Faq';
-import { Route,Routes } from 'react-router-dom';
+import { Route,Routes, useLocation } from 'react-router-dom';
 import Typical from './Components/Typical/Typical';
 import Roles from './Components/Roles/Roles';
 import Info from './Components/Info/Info';
@@ -30,12 +30,13 @@ const Career=()=>{
   </>)
 }
 function App() {
+  const location=useLocation();
   return (
     <>
      <NavBar/>
-     <Routes>
+     <Routes location={location} key={location.key}>
      <Route path="/" exact element={<Home/>} />
-     <Route path="/home" exact element={<Home/>} />
+     <Route path="/iqub" exact element={<Home/>} />
      <Route path="/about" exact element={<About/>} />
      <Route path="/career" exact element={<Career/>} />
      </Routes>
