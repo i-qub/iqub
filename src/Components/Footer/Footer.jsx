@@ -19,6 +19,10 @@ font-family:sans-serif;
         border-radius:50px;
         margin-top:20px;
     }
+    & .nav:hover{
+        background-color:rgb(5,5,5);
+        box-shadow:rgb(100,100,100) 0px 0px 8px 0px;
+    }
     & .copyright{
         display:block;
         margin-top:40px;
@@ -62,14 +66,14 @@ font-family:sans-serif;
     & .down-button button{
         padding:10px 40px 10px 30px;
         border:none;
-        background:linear-gradient(90deg, #002D72, #005EB8);
+        background:linear-gradient(-80deg, #01a49e, #005EB8);
         color:white;
         margin-right:30px;
         width:300px;
         border-radius:20px;
     }
     & .down-button button:hover{
-        background:linear-gradient(-80deg, #002D72, #005EB8);
+        background:linear-gradient(90deg, #01a49e, #005EB8);
     }
     & .down-button button svg{
         margin-right:100%;
@@ -117,7 +121,6 @@ export default function Footer() {
   return (
     <Foot>
       <div className="foot-left">
-          <div className="logo">Logo</div>
           <div className="nav-links">
               <button className="nav">About us</button>
               <button className="nav">Product</button>
@@ -127,10 +130,10 @@ export default function Footer() {
               <button className="nav">Privacy Policy</button>
               <button className="nav">Terms & Conditions</button>
           </div>
-          <span className="copyright">© Copyright 2021 xyz Technologies Pvt. Ltd.</span>
+          <span className="copyright">© Copyright 2021 i-qub Technologies Pvt. Ltd.</span>
       </div>
       <div className="foot-right">
-        <div className="social">
+        <div className="social pointer">
             {icons.map((val,idx)=>{
                 return <div><span>{val}</span></div>;
             })}

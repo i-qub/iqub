@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 const InteractivityDiv=styled.div`
-background:linear-gradient(90deg, #002D72, #005EB8);
+background:linear-gradient(-80deg, #01a49e, #005EB8);
 width:100%;
 height:100vh;
 font-family:sans-serif;

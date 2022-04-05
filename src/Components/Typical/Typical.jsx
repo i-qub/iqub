@@ -11,8 +11,8 @@ font-family:sans-serif;
     justify-content:space-between;
     align-items:center;
     &>.title{
-        font-size:3rem;
-        width:35%;
+        font-size:3.2rem;
+        width:40%;
         font-weight:600;
     }
     &>.line{
@@ -52,7 +52,7 @@ font-family:sans-serif;
 export default function Typical() {
   return (
     <TypicalDay>
-      <span className="top"><span className="title">A typical day in the life of an asdf`ian</span> <span className="line"></span></span>
+      <span className="top"><span className="title">A typical day in the life of an i-qub`ian</span> <span className="line"></span></span>
       <div className="types">
         <div className="box">
             <span className="title">Lorem</span><span className="sub-title">Senior</span>

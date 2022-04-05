@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
+import logo from '../../assests/logo.png'
 const Nav=styled.div`
 width:77vw;
 height:12vh;
@@ -42,30 +43,35 @@ font-family:sans-serif;
   -webkit-text-fill-color: transparent;
 }
 & .logo{
-    font-size:2rem;
-    font-weight:bolder;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    &>img {
+      height: 80%;
+    }
 }
 & button{
     padding:20px 16px;
     font-size:1.1rem;
     border:none;
     border-radius:20px;
-    background:linear-gradient(90deg, #002D72, #005EB8);
+    background:linear-gradient(-80deg, #01a49e, #005EB8);
     color:white;
 }
 & button:hover{
-    background:linear-gradient(-80deg, #001D72, #005EB8);
+    background:linear-gradient(90deg, #01a49e, #005EB8);
 }
 `
 export default function NavBar() {
   const [route,setRoute]=useState("");
   return (
     <Nav>
-      <span className="logo">Logo</span>
+      <span className="logo"><img src={logo} /></span>
       <div className="nav-links">
       <Link to="/iqub/" style={{textDecoration:"none"}} onClick={()=>setRoute("")}><span className={'pointer'+(route===""?' active':null)}>Home</span></Link>
       <Link to="/iqub/about" style={{textDecoration:"none"}}  onClick={()=>setRoute("about")}><span className={'pointer'+(route==="about"?' active':'')}>About</span></Link>
-      <Link to="/iqub/career" style={{textDecoration:"none"}} onClick={()=>setRoute("career")}><span className={'pointer'+(route==="career"?' active':'')}>Carrer</span></Link>
+      <Link to="/iqub/career" style={{textDecoration:"none"}} onClick={()=>setRoute("career")}><span className={'pointer'+(route==="career"?' active':'')}>Career</span></Link>
       </div>
       <button className='pointer'>Book a Demo</button>
     </Nav>
