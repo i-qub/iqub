@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/iqub/static/css/main.91bee199.css",
-    "main.js": "/iqub/static/js/main.e24737bb.js",
+    "main.js": "/iqub/static/js/main.b1099e04.js",
     "index.html": "/iqub/index.html",
     "main.91bee199.css.map": "/iqub/static/css/main.91bee199.css.map",
-    "main.e24737bb.js.map": "/iqub/static/js/main.e24737bb.js.map"
+    "main.b1099e04.js.map": "/iqub/static/js/main.b1099e04.js.map"
   },
   "entrypoints": [
     "static/css/main.91bee199.css",
-    "static/js/main.e24737bb.js"
+    "static/js/main.b1099e04.js"
   ]
 }
