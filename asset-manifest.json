@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/iqub/static/css/main.91bee199.css",
-    "main.js": "/iqub/static/js/main.b1099e04.js",
+    "main.css": "/iqub/static/css/main.cc5bff9a.css",
+    "main.js": "/iqub/static/js/main.2af2c855.js",
+    "static/media/logo.png": "/iqub/static/media/logo.a8661b62b983da289233.png",
     "index.html": "/iqub/index.html",
-    "main.91bee199.css.map": "/iqub/static/css/main.91bee199.css.map",
-    "main.b1099e04.js.map": "/iqub/static/js/main.b1099e04.js.map"
+    "main.cc5bff9a.css.map": "/iqub/static/css/main.cc5bff9a.css.map",
+    "main.2af2c855.js.map": "/iqub/static/js/main.2af2c855.js.map"
   },
   "entrypoints": [
-    "static/css/main.91bee199.css",
-    "static/js/main.b1099e04.js"
+    "static/css/main.cc5bff9a.css",
+    "static/js/main.2af2c855.js"
   ]
 }
