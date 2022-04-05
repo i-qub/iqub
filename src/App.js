@@ -35,9 +35,9 @@ function App() {
     <>
      <NavBar/>
      <Routes location={location} key={location.key}>
-     <Route path="/" exact element={<Home/>} />
-     <Route path="/about" exact element={<About/>} />
-     <Route path="/career" exact element={<Career/>} />
+     <Route path="/iqub/" exact element={<Home/>} />
+     <Route path="/iqub/about"  element={<About/>} />
+     <Route path="/iqub/career"  element={<Career/>} />
      </Routes>
      <Footer/>
     </>
