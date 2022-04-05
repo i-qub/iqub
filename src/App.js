@@ -35,7 +35,7 @@ function App() {
     <>
      <NavBar/>
      <Routes location={location} key={location.key}>
-     <Route path="/iqub" exact element={<Home/>} />
+     <Route path="/" exact element={<Home/>} />
      <Route path="/iqub/about" exact element={<About/>} />
      <Route path="/iqub/career" exact element={<Career/>} />
      </Routes>
