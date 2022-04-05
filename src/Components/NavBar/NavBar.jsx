@@ -63,9 +63,9 @@ export default function NavBar() {
     <Nav>
       <span className="logo">Logo</span>
       <div className="nav-links">
-      <Link to="/iqub/" style={{textDecoration:"none"}} onClick={()=>setRoute("")}><span className={'pointer'+(route===""?' active':null)}>Home</span></Link>
-      <Link to="/iqub/about" style={{textDecoration:"none"}}  onClick={()=>setRoute("about")}><span className={'pointer'+(route==="about"?' active':'')}>About</span></Link>
-      <Link to="/iqub/career" style={{textDecoration:"none"}} onClick={()=>setRoute("career")}><span className={'pointer'+(route==="career"?' active':'')}>Carrer</span></Link>
+      <Link to="/" style={{textDecoration:"none"}} onClick={()=>setRoute("")}><span className={'pointer'+(route===""?' active':null)}>Home</span></Link>
+      <Link to="/about" style={{textDecoration:"none"}}  onClick={()=>setRoute("about")}><span className={'pointer'+(route==="about"?' active':'')}>About</span></Link>
+      <Link to="/career" style={{textDecoration:"none"}} onClick={()=>setRoute("career")}><span className={'pointer'+(route==="career"?' active':'')}>Carrer</span></Link>
       </div>
       <button className='pointer'>Book a Demo</button>
     </Nav>
