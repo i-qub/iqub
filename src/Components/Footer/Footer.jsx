@@ -35,7 +35,7 @@ font-family:sans-serif;
     & .social div{
         padding:2px;
         border-radius:50%;
-        background:linear-gradient(to top right, #9a4afc -2.43%, #ad3b96 -2.08%, #600271 1.42%, #b73360 100.72%, #ef8555 100.72%);
+        background:linear-gradient(90deg, #005D72, #005EB8);
         width:30px;
         height:30px;
         position:relative;
@@ -62,14 +62,14 @@ font-family:sans-serif;
     & .down-button button{
         padding:10px 40px 10px 30px;
         border:none;
-        background:linear-gradient(to top right, #9a4afc -2.43%, #ad3b96 -2.08%, #600271 1.42%, #b73360 100.72%, #ef8555 100.72%);
+        background:linear-gradient(90deg, #002D72, #005EB8);
         color:white;
         margin-right:30px;
         width:300px;
         border-radius:20px;
     }
     & .down-button button:hover{
-        background:linear-gradient(292.95deg,#9a4afc -17.22%,#ad3b96 -16.76%,#600271 -12.25%,#b73360 10.42%,#ef8555 107.4%);
+        background:linear-gradient(-80deg, #002D72, #005EB8);
     }
     & .down-button button svg{
         margin-right:100%;

@@ -11,10 +11,11 @@ background-color:rgba(0,0,0,0.9);
     color:white;
     padding:100px 150px;
     & .title{
-        background: linear-gradient(313.98deg,#9a4afc -4.51%,#600271 5.86%,#ad3b96 25.4%,#ef8555 86.75%,#b73360 100.72%);
+        background:linear-gradient(-80deg, #01a49e, #005EB8);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size:3.5rem;
+        display:inline-block;
         font-weight:500;
     }
     &>p{
@@ -75,15 +76,15 @@ export default function Dash() {
           <div className="title">Dash</div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eaque autem iste commodi adipisci ab illo aliquam officia doloribus minima?</p>
           <div className="infos">
-              <div className={dash[0]?"info active":"info"} onClick={()=>setdash([true,false,false])}>
+              <div className={dash[0]?"info active pointer":"info pointer"} onClick={()=>setdash([true,false,false])}>
                   <span className={dash[0]?"info-title active":"info-title"}>{dash[0]?icons[0]:icons[1]} Lorem ipsum dolor sit.</span>
                   {dash[0] && <span className="hidden-msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa asperiores suscipit ut numquam quibusdam repellendus omnis, et sed veniam iure expedita obcaecati quos dolor eius? Alias, adipisci laborum!.</span>}
               </div>
-              <div className={dash[1]?"info active":"info"} onClick={()=>setdash([false,true,false])}>
+              <div className={dash[1]?"info active pointer":"info pointer"} onClick={()=>setdash([false,true,false])}>
                   <span className={dash[1]?"info-title active":"info-title"}>{dash[1]?icons[0]:icons[1]} Lorem, ipsum dolor.</span>
                   {dash[1] && <span className="hidden-msg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis non incidunt, cum distinctio autem quis quibusdam, eos itaque odit sunt, iusto velit vitae accusamus consequuntur nobis sapiente!</span>}
               </div>
-              <div className={dash[2]?"info active":"info"} onClick={()=>setdash([false,false,true])}>
+              <div className={dash[2]?"info active pointer":"info pointer"} onClick={()=>setdash([false,false,true])}>
                   <span className={dash[2]?"info-title active":"info-title"}>{dash[2]?icons[0]:icons[1]} Lorem ipsum dolor sit.</span>
                   {dash[2] && <span className="hidden-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quaerat porro velit, a magnam expedita odio repellat optio quidem, sequi, nihil consequatur. Nemo quis harum dolor ea ab officiis asperiores dolorum.</span>}
               </div>

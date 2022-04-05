@@ -16,9 +16,9 @@ font-family:sans-serif;
         font-weight:600;
     }
     &>.line{
-        width:65%;
+        width:70%;
         height:6px;
-        background-color:black;
+        background:linear-gradient(-80deg, #01a49e, #005EB8);
     }
 }
 &>.types{
@@ -30,14 +30,21 @@ font-family:sans-serif;
     &>.box{
         width:30%;
         padding:30px;
-        border-radius:20px;
+        border-radius:10px;
         margin:30px 50px;
-        background:rgb(200,200,200);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         &>.title{
             font-size:2rem;
             font-weight:500;
             display:block;
+        }
+        &>.sub-title {
             margin-bottom:15px;
+            display: inline-block;
+            color: rgb(150, 150, 150)
+        }
+        &>.message{
+            display:block;
         }
     }
 }
@@ -48,36 +55,37 @@ export default function Typical() {
       <span className="top"><span className="title">A typical day in the life of an asdf`ian</span> <span className="line"></span></span>
       <div className="types">
         <div className="box">
-            <span className="title">Lorem</span>
+            <span className="title">Lorem</span><span className="sub-title">Senior</span>
             <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
         </div>
         <div className="box">
             <span className="title">Lorem</span>
+            <span className="sub-title">Senior</span>
             <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
         </div>
         <div className="box">
-            <span className="title">Lorem</span>
+            <span className="title">Lorem</span><span className="sub-title">Senior</span>
             <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
         </div>
         <div className="box">
-            <span className="title">Lorem</span>
+            <span className="title">Lorem</span><span className="sub-title">Senior</span>
             <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
         </div>
         <div className="box">
-            <span className="title">Lorem</span>
+            <span className="title">Lorem</span><span className="sub-title">Senior</span>
             <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
         </div>
         <div className="box">
-            <span className="title">Lorem</span>
+            <span className="title">Lorem</span><span className="sub-title">Senior</span>
             <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
         </div>
         <div className="box">
-            <span className="title">Lorem</span>
+            <span className="title">Lorem</span><span className="sub-title">Senior</span>
             <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
         </div>
         <div className="box">
-            <span className="title">Lorem</span>
-            <span className="message">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo animi qui magnam voluptatem saepe minus nesciunt recusandae in accusamus eum, quasi dolorem a nostrum doloribus facilis iusto. Labore, tenetur velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
+            <span className="title">Lorem</span><span className="sub-title">Senior</span>
+            <span className="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolores velit repudiandae, commodi soluta at recusandae atque! Earum, placeat quasi?</span>
         </div>
       </div>
     </TypicalDay>

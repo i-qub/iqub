@@ -7,16 +7,10 @@ font-family:sans-serif;
 padding:90px 80px;
 &>span{
   font-size:2.9rem;
-  background:linear-gradient(
-    313.98deg,
-    #9a4afc -4.51%,
-    #600271 5.86%,
-    #ad3b96 76.45%,
-    #ef8555 95.12%,
-    #b73360 100.72%
-    );
+  background:linear-gradient(-80deg, #01a49e, #005EB8);
   -webkit-text-fill-color:transparent;
   -webkit-background-clip:text;
+  font-weight:500;
   letter-spacing:2px;
 }
 & .slider{

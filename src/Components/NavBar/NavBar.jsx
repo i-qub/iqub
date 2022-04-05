@@ -22,7 +22,7 @@ font-family:sans-serif;
 }
 & .nav-links span::after{
     content: "";
-    background: linear-gradient(to top right, #9a4afc -2.43%, #ad3b96 -2.08%, #600271 1.42%, #b73360 100.72%, #ef8555 100.72%);
+    background: linear-gradient(90deg, #002D72, #005EB8);
     display: block;
     position:absolute;
     height:3px;
@@ -37,7 +37,7 @@ font-family:sans-serif;
     width:100%;
 }
 & .nav-links span:hover,& .nav-links span.active{
-    background: linear-gradient(to top right, #9a4afc -2.43%, #ad3b96 -2.08%, #600271 1.42%, #b73360 100.72%, #ef8555 100.72%);
+    background: linear-gradient(90deg, #002D72, #005EB8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -50,11 +50,11 @@ font-family:sans-serif;
     font-size:1.1rem;
     border:none;
     border-radius:20px;
-    background:linear-gradient(to top right, #9a4afc -2.43%, #ad3b96 -2.08%, #600271 1.42%, #b73360 100.72%, #ef8555 100.72%);
+    background:linear-gradient(90deg, #002D72, #005EB8);
     color:white;
 }
 & button:hover{
-    background:linear-gradient(292.95deg,#9a4afc -17.22%,#ad3b96 -16.76%,#600271 -12.25%,#b73360 10.42%,#ef8555 107.4%);
+    background:linear-gradient(-80deg, #001D72, #005EB8);
 }
 `
 export default function NavBar() {

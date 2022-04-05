@@ -22,19 +22,12 @@ font-family:sans-serif;
     }
 }
 & .title{
-    background:linear-gradient(
-        313.98deg,
-        #9a4afc -4.51%,
-        #600271 5.86%,
-        #ad3b96 25.4%,
-        #ef8555 86.75%,
-        #b73360 100.72%
-        );
+    background:linear-gradient(-80deg, #01a49e, #005EB8);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-family:'Gilroy', sans-serif;
     font-size:3.5rem;
-    font-weight:600;
+    font-weight:500;
     margin:0px auto;
     margin-bottom:20px;
 }
@@ -43,14 +36,7 @@ font-family:sans-serif;
     font-weight:100;
     &>.inner{
         display:inline-block;
-        background:linear-gradient(
-            313.98deg,
-            #9a4afc -4.51%,
-            #600271 5.86%,
-            #ad3b96 25.4%,
-            #ef8555 86.75%,
-            #b73360 100.72%
-            );
+        background:linear-gradient(180deg, #002D72, #005EB8);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         font-size:2.5rem;

@@ -12,13 +12,13 @@ font-family:sans-serif;
     align-items:center;
     &>.title{
         font-size:4rem;
-        width:25%;
+        width:40%;
         font-weight:600;
     }
     &>.line{
-        width:75%;
+        width:80%;
         height:6px;
-        background-color:black;
+        background:linear-gradient(-80deg, #01a49e, #005EB8);
     }
 }
 &>.bulletin{
@@ -28,7 +28,7 @@ font-family:sans-serif;
     &>.card{
         width:25%;
         padding:30px;
-        margin:30px 20px;
+        margin:40px 20px;
         &>span{
             display:block;
             font-size:1.2rem;

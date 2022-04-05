@@ -4,20 +4,14 @@ const NewsDiv=styled.div`
 font-family:sans-serif;
 padding:100px;
 &>span{
-    font-size:2.5rem;
-    background:linear-gradient(
-        313.98deg,
-        #9a4afc -4.51%,
-        #600271 5.86%,
-        #ad3b96 76.45%,
-        #ef8555 95.12%,
-        #b73360 100.72%
-        );
-      -webkit-text-fill-color:transparent;
-      -webkit-background-clip:text;
-      font-weight:bold;
-      display:block;
-      margin-bottom:50px;
+    font-size:2.9rem;
+    background:linear-gradient(-270deg,#005EB8,#01a49e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:500;
+    display:inline-block;
+    margin-bottom:50px;
+
 }
 &>.news-div{
     display:flex;
@@ -46,7 +40,7 @@ padding:100px;
             border:none;
             background:transparent;
             font-size:1.3rem;
-            color:#983bab;
+            color:#005EB8;
             &>span{
                 display:inline-block;
                 animation:right .85s infinite alternate;
