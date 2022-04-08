@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 const DashDiv=styled.div`
 width:100vw;
@@ -69,24 +69,30 @@ const icons=[<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill
 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
 </svg>]
 export default function Dash() {
-    const [dash,setdash]=useState([false,false,false])
+    const [num,setNum]=useState(0);
+    useEffect(()=>{
+        const timer=setInterval(()=>{
+            setNum(m=>(m+1)%3);
+        },5000);
+    return ()=>{clearInterval(timer)}
+    },[])
   return (
     <DashDiv>
       <div className="left">
           <div className="title">Dash</div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eaque autem iste commodi adipisci ab illo aliquam officia doloribus minima?</p>
           <div className="infos">
-              <div className={dash[0]?"info active pointer":"info pointer"} onClick={()=>setdash([true,false,false])}>
-                  <span className={dash[0]?"info-title active":"info-title"}>{dash[0]?icons[0]:icons[1]} Lorem ipsum dolor sit.</span>
-                  {dash[0] && <span className="hidden-msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa asperiores suscipit ut numquam quibusdam repellendus omnis, et sed veniam iure expedita obcaecati quos dolor eius? Alias, adipisci laborum!.</span>}
+              <div className={num==0?"info active pointer":"info pointer"} onClick={()=>setNum(0)}>
+                  <span className={num==0?"info-title active":"info-title"}>{num==0?icons[0]:icons[1]} Lorem ipsum dolor sit.</span>
+                  {num==0 && <span className="hidden-msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa asperiores suscipit ut numquam quibusdam repellendus omnis, et sed veniam iure expedita obcaecati quos dolor eius? Alias, adipisci laborum!.</span>}
               </div>
-              <div className={dash[1]?"info active pointer":"info pointer"} onClick={()=>setdash([false,true,false])}>
-                  <span className={dash[1]?"info-title active":"info-title"}>{dash[1]?icons[0]:icons[1]} Lorem, ipsum dolor.</span>
-                  {dash[1] && <span className="hidden-msg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis non incidunt, cum distinctio autem quis quibusdam, eos itaque odit sunt, iusto velit vitae accusamus consequuntur nobis sapiente!</span>}
+              <div className={num==1?"info active pointer":"info pointer"} onClick={()=>setNum(1)}>
+                  <span className={num==1?"info-title active":"info-title"}>{num==1?icons[0]:icons[1]} Lorem, ipsum dolor.</span>
+                  {num==1 && <span className="hidden-msg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis non incidunt, cum distinctio autem quis quibusdam, eos itaque odit sunt, iusto velit vitae accusamus consequuntur nobis sapiente!</span>}
               </div>
-              <div className={dash[2]?"info active pointer":"info pointer"} onClick={()=>setdash([false,false,true])}>
-                  <span className={dash[2]?"info-title active":"info-title"}>{dash[2]?icons[0]:icons[1]} Lorem ipsum dolor sit.</span>
-                  {dash[2] && <span className="hidden-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quaerat porro velit, a magnam expedita odio repellat optio quidem, sequi, nihil consequatur. Nemo quis harum dolor ea ab officiis asperiores dolorum.</span>}
+              <div className={num==2?"info active pointer":"info pointer"} onClick={()=>setNum(2)}>
+                  <span className={num==2?"info-title active":"info-title"}>{num==2?icons[0]:icons[1]} Lorem ipsum dolor sit.</span>
+                  {num==2 && <span className="hidden-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quaerat porro velit, a magnam expedita odio repellat optio quidem, sequi, nihil consequatur. Nemo quis harum dolor ea ab officiis asperiores dolorum.</span>}
               </div>
           </div>
       </div>

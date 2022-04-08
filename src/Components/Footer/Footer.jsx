@@ -126,7 +126,7 @@ export default function Footer() {
               <button className="nav">Product</button>
               <button className="nav">Partners</button>
               <button className="nav">Blog</button>
-              <button className="nav">Carrer</button>
+              <button className="nav">Career</button>
               <button className="nav">Privacy Policy</button>
               <button className="nav">Terms & Conditions</button>
           </div>

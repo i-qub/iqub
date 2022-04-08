@@ -46,9 +46,26 @@ color:rgb(200,200,200);
         }
     }
     &>.message{
-        margin-top:20px;
-        color:rgb(200,200,200)
+        color:rgb(200,200,200);
+        display:none;
+        transform-origin:top center;
     }
+    &>.message.active{
+      margin-top:20px;
+      animation:grow 0.25s ease-in-out 1;
+      display:block;
+      @keyframes grow{
+        0%{
+          transform:scaleY(0);
+        }
+        80%{
+          transform:scaleY(1.15);
+        }
+        100%{
+          transform:scaleY(1);
+        }
+      }
+  }
 }
 &>.apply{
     padding:15px 25px;
@@ -109,8 +126,8 @@ export default function Roles() {
             </defs>
           </svg>
         </span>
-        {msg[0] && (
-          <span className="message">
+        
+          <span className={msg[0]?"message active":"message"}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo esse
             a libero neque minima omnis provident, repellat cum reiciendis odit
             doloribus qui. Iusto dicta recusandae omnis obcaecati. Doloremque,
@@ -118,7 +135,6 @@ export default function Roles() {
             sit asperiores tempore culpa nulla optio sapiente quisquam, quas
             omnis similique error.
           </span>
-        )}
       </div>
       <div className="role pointer" onClick={() => msgSet(1)}>
         <span className="title">
@@ -146,13 +162,11 @@ export default function Roles() {
             </defs>
           </svg>
         </span>
-        {msg[1] && (
-          <span className="message">
+        <span className={msg[1]?"message active":"message"}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
             distinctio molestiae facere voluptatum illum ab vitae cupiditate
             deserunt unde ea.
           </span>
-        )}
       </div>
       <div className="role pointer" onClick={() => msgSet(2)}>
         <span className="title">
@@ -180,15 +194,14 @@ export default function Roles() {
             </defs>
           </svg>
         </span>
-        {msg[2] && (
-          <span className="message">
+        <span className={msg[2]?"message active":"message"}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
             distinctio molestiae facere voluptatum illum ab vitae cupiditate
             deserunt unde ea.
           </span>
-        )}
       </div>
       <button className="apply pointer">Apply</button>
     </RolesDiv>
   );
 }
+

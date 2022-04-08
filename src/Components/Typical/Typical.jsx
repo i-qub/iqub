@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 const TypicalDay=styled.div`
 width:100vw;
-padding:20px;
+padding:50px 20px;
 font-family:sans-serif;
 &>.top{
     width:90%;
@@ -32,7 +32,7 @@ font-family:sans-serif;
         padding:30px;
         border-radius:10px;
         margin:30px 50px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        box-shadow: rgba(100, 107, 105, 0.2) 0px 8px 24px;
         &>.title{
             font-size:2rem;
             font-weight:500;
