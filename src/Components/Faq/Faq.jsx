@@ -64,7 +64,7 @@ export default function Faq() {
       <div className="qn-div" onClick={()=>setQn([false,false,false,false,true,false,false,false,false])}><span className="qn"><span className="inner">{qn[4]?"-":"+"}</span> Lorem ipsum dolor sit amet consectetur?</span>
       {qn[4]?<span className="ans">Lorem ipsum dolor sit amet.</span>:null}
       </div>
-      <div className="qn-div" onClick={()=>setQn([false,false,false,false,false,true,false,false,false])}><span className="qn"><span className="inner">{qn[5]?"-":"+"}</span> Lorem ipsumipsumipsumipsumipsum dolor sit amet?</span>
+      <div className="qn-div" onClick={()=>setQn([false,false,false,false,false,true,false,false,false])}><span className="qn"><span className="inner">{qn[5]?"-":"+"}</span> Lorem dolor sit amet?</span>
       {qn[5]?<span className="ans">Lorem ipsum dolor sit amet.</span>:null}
       </div>
       <div className="qn-div" onClick={()=>setQn([false,false,false,false,false,false,true,false,false])}><span className="qn"><span className="inner">{qn[6]?"-":"+"}</span> Lorem ipsum dolor sit amet?</span>

@@ -16,6 +16,7 @@ padding:90px 80px;
 & .slider{
   width:100%;
   height:100%;
+  overflow:hidden;
 }
 & .slider-in{
   width:100%;
@@ -23,12 +24,17 @@ padding:90px 80px;
   margin-right:auto;
   display:flex;
   align-items:center;
-  overflow-y:scroll;
+  animation:slide 15s linear infinite;
+  @keyframes slide{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
   & .logo{
     margin:0px 30px;
-  }
-  &::-webkit-scrollbar {
-    display: none;
   }
 }
 `

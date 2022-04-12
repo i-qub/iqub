@@ -52,19 +52,7 @@ color:rgb(200,200,200);
     }
     &>.message.active{
       margin-top:20px;
-      animation:grow 0.25s ease-in-out 1;
       display:block;
-      @keyframes grow{
-        0%{
-          transform:scaleY(0);
-        }
-        80%{
-          transform:scaleY(1.15);
-        }
-        100%{
-          transform:scaleY(1);
-        }
-      }
   }
 }
 &>.apply{

@@ -12,7 +12,7 @@ font-family:sans-serif;
     align-items:center;
     &>.title{
         font-size:3.2rem;
-        width:40%;
+        width:50%;
         font-weight:600;
     }
     &>.line{
@@ -32,7 +32,10 @@ font-family:sans-serif;
         padding:30px;
         border-radius:10px;
         margin:30px 50px;
-        box-shadow: rgba(100, 107, 105, 0.2) 0px 8px 24px;
+        position:relative;
+        overflow:hidden;
+        box-shadow: rgba(0, 0, 105, 0.2) 0px 8px 24px;
+        transition:all .3s ease-in-out;
         &>.title{
             font-size:2rem;
             font-weight:500;
@@ -46,6 +49,27 @@ font-family:sans-serif;
         &>.message{
             display:block;
         }
+    }
+    &>.box::after{
+        content:"";
+        position:absolute;
+        z-index:-1;
+        width:10px;
+        height:10px;
+        top:-5px;
+        right:-5px;
+        border-radius:50%;
+        background:linear-gradient(-80deg, #01a49e, #005EB8);
+        transition:all .4s ease-in-out;
+    }
+    &>.box:hover::after{
+        transform:scale(120);
+    }
+    &>.box:hover{
+        color:white;
+    }
+    &>.box:hover .sub-title{
+        color:rgb(230,230,230);
     }
 }
 `
