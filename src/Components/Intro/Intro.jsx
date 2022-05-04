@@ -7,7 +7,7 @@ padding: 3rem;
 font-family:Roboto,sans-serif;
 &>.title{
     width:40%;
-    font-size:5.5rem;
+    font-size:5rem;
     margin-bottom:3.3rem;
     font-weight:500;
     color:rgb(50,50,50);

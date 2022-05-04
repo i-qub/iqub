@@ -13,7 +13,7 @@ justify-content:center;
 align-items:center;
 &>.modal{
     width:40vw;
-    height:80vh;
+    height:90vh;
     font-family:Roboto;
     background:linear-gradient(-80deg, #01a49e, #005EB8);
     border-radius:10px;
