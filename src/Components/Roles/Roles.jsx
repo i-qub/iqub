@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Modal from "../Modal/Modal";
 const RolesDiv = styled.div`
 font-family:sans-serif;
 width:100%;
@@ -75,9 +76,10 @@ background:linear-gradient(-80deg, #01a49e, #005EB8);
 `;
 export default function Roles() {
   const [msg, setMsg] = useState([true, false, false]);
+  const [mod,setModal]=useState(false);
   const msgSet = (idx) => {
     var newMsg = [false, false, false];
-    newMsg[idx] = true;
+    if(msg[idx]===false)newMsg[idx] = true;
     setMsg(newMsg);
   };
   return (
@@ -188,7 +190,8 @@ export default function Roles() {
             deserunt unde ea.
           </span>
       </div>
-      <button className="apply pointer">Apply</button>
+      <button className="apply pointer" onClick={()=>setModal(true)}>Apply</button>
+      {mod && <Modal close={()=>setModal(false)}></Modal>}
     </RolesDiv>
   );
 }

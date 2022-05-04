@@ -14,11 +14,13 @@ font-family:sans-serif;
     padding:30px 50px;
     border-radius:30px;
     border:1px solid rgb(70,70,70);
+    position:relative;
+    overflow:hidden;
     &>.ans{
         display:block;
         margin-top:20px;
         margin-left:8%;
-        color:rgb(180,180,180);
+        color:rgb(200,200,200); 
     }
 }
 & .title{

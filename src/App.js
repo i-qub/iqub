@@ -10,7 +10,10 @@ import Typical from './Components/Typical/Typical';
 import Roles from './Components/Roles/Roles';
 import Info from './Components/Info/Info';
 import Solve from './Components/Solve/Solve';
+import { useEffect } from 'react';
+import Intro from './Components/Intro/Intro';
 const Home=()=>{return (<>
+     <Intro/>
      <Dash/> 
      <Integrations/>
      <Interactivity/>
@@ -31,6 +34,16 @@ const Career=()=>{
 }
 function App() {
   const location=useLocation();
+  useEffect(()=>{
+    if(location.pathname==='/iqub/')
+      document.title="iqub | home"
+    else if(location.pathname==='/iqub/about')
+      document.title="iqub | about"
+    else if(location.pathname==='/iqub/career')
+      document.title="iqub | career"
+    else if(location.pathname==='/iqub/team')
+      document.title="iqub | team"
+  },[location])
   return (
     <>
      <NavBar/>
@@ -38,6 +51,7 @@ function App() {
      <Route path="/iqub/" exact element={<Home/>} />
      <Route path="/iqub/about"  element={<About/>} />
      <Route path="/iqub/career"  element={<Career/>} />
+     <Route path="/iqub/team"  element={<Career/>} />
      </Routes>
      <Footer/>
     </>

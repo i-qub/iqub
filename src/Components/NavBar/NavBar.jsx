@@ -55,9 +55,19 @@ font-family:sans-serif;
     padding:20px 16px;
     font-size:1.1rem;
     border:none;
-    border-radius:20px;
+    border-radius:100px;
     background:linear-gradient(-80deg, #01a49e, #005EB8);
     color:white;
+    min-width:14%;
+    &>span:nth-child(2){
+      display:none;
+    }
+    &:hover>span:first-child{
+      display:none;
+    }
+    &:hover>span:nth-child(2){
+      display:block;
+    }
 }
 & button:hover{
     background:linear-gradient(90deg, #01a49e, #005EB8);
@@ -71,9 +81,15 @@ export default function NavBar() {
       <div className="nav-links">
       <Link to="/iqub/" style={{textDecoration:"none"}} onClick={()=>setRoute("")}><span className={'pointer'+(route===""?' active':null)}>Home</span></Link>
       <Link to="/iqub/about" style={{textDecoration:"none"}}  onClick={()=>setRoute("about")}><span className={'pointer'+(route==="about"?' active':'')}>About</span></Link>
+      <Link to="/iqub/team" style={{textDecoration:"none"}} onClick={()=>setRoute("team")}><span className={'pointer'+(route==="team"?' active':'')}>Team</span></Link>
       <Link to="/iqub/career" style={{textDecoration:"none"}} onClick={()=>setRoute("career")}><span className={'pointer'+(route==="career"?' active':'')}>Career</span></Link>
       </div>
-      <button className='pointer'>Book a Demo</button>
+      <button className='pointer' onClick={()=>{
+        navigator.clipboard.writeText("+91-8838398332");
+      }}>
+      <span>Contact us</span>
+      <span>+91-8838398332</span>
+      </button>
     </Nav>
   )
 }

@@ -83,23 +83,6 @@ export default function Typical() {
             <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
         </div>
         <div className="box">
-            <span className="title">Lorem</span>
-            <span className="sub-title">Senior</span>
-            <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
-        </div>
-        <div className="box">
-            <span className="title">Lorem</span><span className="sub-title">Senior</span>
-            <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
-        </div>
-        <div className="box">
-            <span className="title">Lorem</span><span className="sub-title">Senior</span>
-            <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
-        </div>
-        <div className="box">
-            <span className="title">Lorem</span><span className="sub-title">Senior</span>
-            <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
-        </div>
-        <div className="box">
             <span className="title">Lorem</span><span className="sub-title">Senior</span>
             <span className="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ipsam quisquam sunt obcaecati magni accusantium eveniet temporibus, vel neque numquam eum dolorem, aperiam reprehenderit laborum velit, autem voluptate sint.</span>
         </div>
