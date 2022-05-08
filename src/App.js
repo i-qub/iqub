@@ -14,11 +14,11 @@ import { useEffect } from 'react';
 import Intro from './Components/Intro/Intro';
 const Home=()=>{return (<>
      <Intro/>
-     <Dash/> 
+     {/* <Dash/> 
      <Integrations/>
      <Interactivity/>
      <News/>
-     <Faq/>
+     <Faq/> */}
 </>)}
 const About=()=>{
   return (<>

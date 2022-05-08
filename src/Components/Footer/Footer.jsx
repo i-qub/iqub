@@ -10,7 +10,7 @@ font-family:sans-serif;
     flex:1;
     padding:50px 80px;
     & .nav{
-        font-size:1.7rem;
+        font-size:1.4rem;
         padding:20px 30px;
         background-color:rgb(20,20,20);
         border:none;

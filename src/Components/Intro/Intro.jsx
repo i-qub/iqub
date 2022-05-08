@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const IntroDiv=styled.div`
 width:100vw;
 height:90vh;
-padding: 3rem;
+padding: 3rem 5rem;
 font-family:Roboto,sans-serif;
 &>.title{
     width:40%;
