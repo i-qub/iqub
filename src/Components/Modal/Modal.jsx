@@ -65,6 +65,20 @@ align-items:center;
                 fill:#45bed9;
             }
         }
+    &:hover{
+        animation:rot .9s ease-in-out 10 alternate;
+        @keyframes rot{
+            0%{
+                transform:rotateZ(0deg);
+            }
+            60%{
+                transform:rotateZ(360deg);
+            }
+            100%{
+                transform:rotateZ(360deg);
+            }
+        }
+    }
     }
     &>button{
         width:100%;

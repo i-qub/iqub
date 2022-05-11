@@ -51,27 +51,40 @@ font-family:sans-serif;
       height: 80%;
     }
 }
-& button{
-    padding:20px 16px;
-    font-size:1.1rem;
-    border:none;
-    border-radius:100px;
+&>.contact{
+  width:150px;
+  height:45px;
+  position:relative;
+  font-size:1.1rem;
+  border-radius:60px;
+  overflow:hidden;
+  color:white;
+  &>div{
+    width:150px;
+    height:45px;
+    position:absolute;
+    top:0;
+    left:0;
+    text-align:center;
+    line-height:45px;
+  }
+  &>.outer{
+    z-index:1;
+    transition:all .4s ease;
     background:linear-gradient(-80deg, #01a49e, #005EB8);
-    color:white;
-    min-width:14%;
-    &>span:nth-child(2){
-      display:none;
-    }
-    &:hover>span:first-child{
-      display:none;
-    }
-    &:hover>span:nth-child(2){
-      display:block;
-    }
+    letter-spacing:2px;
+    transform-origin:top;
+  }
+  &>.inner{
+  z-index:0;
+  font-size:1rem;
+  background:rgba(0,0,0,0.75);
+  }
+  &:hover .outer{
+    transform:rotateX(-75deg);
+  }
 }
-& button:hover{
-    background:linear-gradient(90deg, #01a49e, #005EB8);
-}
+
 `
 export default function NavBar() {
   const [route,setRoute]=useState("");
@@ -84,12 +97,12 @@ export default function NavBar() {
       <Link to="/iqub/team" style={{textDecoration:"none"}} onClick={()=>setRoute("team")}><span className={'pointer'+(route==="team"?' active':'')}>Team</span></Link>
       <Link to="/iqub/career" style={{textDecoration:"none"}} onClick={()=>setRoute("career")}><span className={'pointer'+(route==="career"?' active':'')}>Career</span></Link>
       </div>
-      <button className='pointer' onClick={()=>{
-        navigator.clipboard.writeText("+91-8838398332");
+      <div className="contact pointer" onClick={()=>{
+        navigator.clipboard.writeText('+91-9791016108')
       }}>
-      <span>Contact us</span>
-      <span>+91-8838398332</span>
-      </button>
+        <div className='outer'>Call us</div>
+        <div className='inner'>91-9791016108</div>
+      </div>
     </Nav>
   )
 }
