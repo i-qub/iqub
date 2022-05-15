@@ -9,14 +9,14 @@ font-family:Roboto,sans-serif;
     width:40%;
     font-size:5rem;
     margin-bottom:3.3rem;
-    font-weight:500;
+    font-weight:400;
     color:rgb(50,50,50);
 }
 &>.sub{
     width:70%;
-    font-size:1.8rem;
+    font-size:1.7rem;
     font-weight:lighter;
-    color:rgb(100,100,100);
+    color:rgba(0,0,0,0.6);
     margin-bottom:2.3rem;
 }
 &>button{
@@ -28,7 +28,7 @@ font-family:Roboto,sans-serif;
     border-radius:100px;
     transition:all .5s ease-in-out;
     &:hover{
-        transform:scale(1.05);
+        transform:scale(1.03);
         opacity:0.86;
     }
 }

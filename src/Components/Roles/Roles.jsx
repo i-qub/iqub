@@ -11,9 +11,10 @@ color:white;
     display:block;
 }
 &>.title{
-    font-size:2.7rem;
-    font-weight:200;
+    font-size:2.4rem;
+    font-weight:100;
     width:100%;
+    color:rgba(255,255,255,0.8);
     text-align:center;
     margin-bottom:20px;
 }
@@ -32,22 +33,24 @@ color:rgb(200,200,200);
     border-radius:20px;
     background-color:rgba(160,160,160,0.05);
     &>.title{
-        font-size:1.5rem;
-        font-weight:500;
+        font-size:1.3rem;
+        font-weight:200;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color:rgba(255,255,255,0.8);
         &>svg {
             transform: scale(1.5);
             filter: invert();
+            transition:all .2s linear;
         }
         &>svg.active{
             transform: scale(1.5) rotate(180deg);
         }
     }
     &>.message{
-        color:rgb(200,200,200);
+        color:rgba(255,255,255,0.5);
         display:none;
         transform-origin:top center;
     }

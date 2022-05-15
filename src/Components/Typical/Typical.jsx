@@ -11,13 +11,13 @@ font-family:sans-serif;
     justify-content:space-between;
     align-items:center;
     &>.title{
-        font-size:3.2rem;
+        font-size:3.5rem;
         width:50%;
-        font-weight:600;
+        font-weight:300;
     }
     &>.line{
-        width:70%;
-        height:6px;
+        width:80%;
+        height:4px;
         background:linear-gradient(-80deg, #01a49e, #005EB8);
     }
 }
@@ -38,16 +38,19 @@ font-family:sans-serif;
         transition:all .3s ease-in-out;
         &>.title{
             font-size:2rem;
-            font-weight:500;
+            font-weight:300;
             display:block;
         }
         &>.sub-title {
             margin-bottom:15px;
             display: inline-block;
-            color: rgb(150, 150, 150)
+            color:rgba(0,0,0,0.6);
+            transition:all .4s ease-in-out;
         }
         &>.message{
             display:block;
+            color: rgba(0,0,0,0.8);
+            transition:all .4s ease-in-out;
         }
     }
     &>.box::after{
@@ -60,7 +63,7 @@ font-family:sans-serif;
         right:-5px;
         border-radius:50%;
         background:linear-gradient(-80deg, #01a49e, #005EB8);
-        transition:all .4s ease-in-out;
+        transition:all .5s ease-in-out;
     }
     &>.box:hover::after{
         transform:scale(120);
@@ -68,8 +71,11 @@ font-family:sans-serif;
     &>.box:hover{
         color:white;
     }
+    &>.box:hover .message{
+        color: rgba(255,255,255,0.8)
+    }
     &>.box:hover .sub-title{
-        color:rgb(230,230,230);
+        color:rgba(255,255,255,0.6);
     }
 }
 `

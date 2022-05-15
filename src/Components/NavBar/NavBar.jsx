@@ -17,8 +17,8 @@ font-family:sans-serif;
 }
 & .nav-links span{
     position:relative;
-    font-size:1.4rem;
-    font-weight:bolder;
+    font-size:1.3rem;
+    font-weight:lighter;
     color:black;
 }
 & .nav-links span::after{
@@ -26,7 +26,7 @@ font-family:sans-serif;
     background: linear-gradient(90deg, #002D72, #005EB8);
     display: block;
     position:absolute;
-    height:3px;
+    height:2px;
     width:0;
     left:0;
     right:0;
@@ -52,15 +52,16 @@ font-family:sans-serif;
     }
 }
 &>.contact{
-  width:150px;
+  width:140px;
   height:45px;
   position:relative;
-  font-size:1.1rem;
+  font-size:1rem;
   border-radius:60px;
   overflow:hidden;
   color:white;
+  font-weight:lighter;
   &>div{
-    width:150px;
+    width:140px;
     height:45px;
     position:absolute;
     top:0;
@@ -77,7 +78,7 @@ font-family:sans-serif;
   }
   &>.inner{
   z-index:0;
-  font-size:1rem;
+  font-size:0.9rem;
   background:rgba(0,0,0,0.75);
   }
   &:hover .outer{

@@ -13,11 +13,11 @@ font-family:sans-serif;
     &>.title{
         font-size:4rem;
         width:40%;
-        font-weight:600;
+        font-weight:300;
     }
     &>.line{
-        width:80%;
-        height:6px;
+        width:90%;
+        height:4px;
         background:linear-gradient(-80deg, #01a49e, #005EB8);
     }
 }
@@ -34,12 +34,13 @@ font-family:sans-serif;
             font-size:1.2rem;
         }
         &>.title{
-            font-weight:600;
+            font-weight:400;
             margin-bottom:20px;
         }
         &>.message{
             font-size:1.1rem;
             font-weight:200;
+            color:rgba(0,0,0,0.7);
         }
     }
 }
