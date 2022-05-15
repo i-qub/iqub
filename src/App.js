@@ -12,6 +12,7 @@ import Info from './Components/Info/Info';
 import Solve from './Components/Solve/Solve';
 import { useEffect } from 'react';
 import Intro from './Components/Intro/Intro';
+import Team from './Components/Team/Team';
 const Home=()=>{return (<>
      <Intro/>
      {/* <Dash/> 
@@ -51,7 +52,7 @@ function App() {
      <Route path="/iqub/" exact element={<Home/>} />
      <Route path="/iqub/about"  element={<About/>} />
      <Route path="/iqub/career"  element={<Career/>} />
-     <Route path="/iqub/team"  element={<Career/>} />
+     <Route path="/iqub/team"  element={<Team/>} />
      </Routes>
      <Footer/>
     </>

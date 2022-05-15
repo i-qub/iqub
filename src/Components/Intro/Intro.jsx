@@ -9,7 +9,7 @@ font-family:Roboto,sans-serif;
     width:40%;
     font-size:5rem;
     margin-bottom:3.3rem;
-    font-weight:400;
+    font-weight:300;
     color:rgb(50,50,50);
 }
 &>.sub{
@@ -23,12 +23,12 @@ font-family:Roboto,sans-serif;
     color:white;
     background:linear-gradient(-80deg, #01a49e, #005EB8);
     border:none;
-    padding:1rem 1.2rem;
+    padding:.9rem 1.1rem;
     font-size:1.2rem;
     border-radius:100px;
     transition:all .5s ease-in-out;
     &:hover{
-        transform:scale(1.03);
+        transform:scale(1.02);
         opacity:0.86;
     }
 }

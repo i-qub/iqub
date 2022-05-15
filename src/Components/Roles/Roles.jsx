@@ -60,11 +60,10 @@ color:rgb(200,200,200);
   }
 }
 &>.apply{
-    padding:15px 25px;
-    font-size:1.4rem;
+    padding:10px 20px;
+    font-size:1.2rem;
     border:none;
     border-radius:10px;
-    font-weight:400;
     display:block;
     margin:0px auto;
     background:linear-gradient(70deg, #01a49e, #005EB8);

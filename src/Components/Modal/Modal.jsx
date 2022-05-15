@@ -6,7 +6,7 @@ top:0;
 bottom:0;
 left:0;
 right:0;
-background-color:rgba(0,0,0,0.5);
+background-color:rgba(0, 0, 0,0.4);
 z-index:100;
 display:flex;
 justify-content:center;
@@ -90,7 +90,6 @@ align-items:center;
         border:none;
         font-weight:light;
         font-size:1.1rem;
-        letter-spacing:0.rem;
         transition:all 320ms ease-in-out;
         &:hover{
             transform:scale(0.95);
