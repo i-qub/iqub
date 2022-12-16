@@ -15,11 +15,11 @@ import Intro from './Components/Intro/Intro';
 import Team from './Components/Team/Team';
 const Home=()=>{return (<>
      <Intro/>
-     {/* <Dash/> 
+     {<Dash/> 
      <Integrations/>
      <Interactivity/>
      <News/>
-     <Faq/> */}
+     <Faq/>}
 </>)}
 const About=()=>{
   return (<>
